@@ -1,0 +1,31 @@
+{
+	"info": {
+		"_postman_id": "2dafd417-ba42-4f3a-919a-f4d971a68f31",
+		"name": "Commission",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37510533",
+		"_collection_link": "https://www.postman.com/sds999-7698/workspace/developer-test/collection/37510533-2dafd417-ba42-4f3a-919a-f4d971a68f31?action=share&source=collection_link&creator=37510533"
+	},
+	"item": [
+		{
+			"name": "getSummary",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/comissions-summary",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"comissions-summary"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "dd405eda-f981-4afd-aaeb-9fe529650d56",
+		"name": "Sale",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37510533",
+		"_collection_link": "https://www.postman.com/sds999-7698/workspace/developer-test/collection/37510533-dd405eda-f981-4afd-aaeb-9fe529650d56?action=share&source=collection_link&creator=37510533"
+	},
+	"item": [
+		{
+			"name": "getSales",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/sales",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"sales"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createSale",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"transaction_number\": \"TRX67\",\n    \"marketing_id\": 1,\n    \"date\": \"2025-11-18\",\n    \"cargo_fee\": 30000,\n    \"total_balance\": 120000,\n    \"grand_total\": 150000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/sales",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"sales"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateSale",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"transaction_number\": \"TRX667\",\n    \"marketing_id\": 1,\n    \"date\": \"2025-11-18\",\n    \"cargo_fee\": 50000,\n    \"total_balance\": 120000,\n    \"grand_total\": 170000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/sales/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"sales",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "51"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteSale",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/sales/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"sales",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "51"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getSalePayments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/sales/:id/payments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"sales",
+						":id",
+						"payments"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "33"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
